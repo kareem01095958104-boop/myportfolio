@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>تواصل معي</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Tahoma", sans-serif;
+      background: url("الخلفيه\ الداكنه.jpeg") no-repeat center center fixed; /* ضع الخلفية اللي تحبها */
+      background-size: cover;
+      color: #fff;
+    }
+
+    .overlay {
+      background: rgba(0,0,0,0.6);
+      min-height: 100vh;
+      padding: 40px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 36px;
+      color: #ffd700;
+    }
+
+    .contacts {
+      max-width: 700px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+
+    .contact-item {
+      background: rgba(255,255,255,0.1);
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      transition: transform 0.3s, background 0.3s;
+    }
+
+    .contact-item:hover {
+      transform: translateY(-5px);
+      background: rgba(255,255,255,0.2);
+    }
+
+    .contact-item h2 {
+      margin-bottom: 10px;
+      font-size: 22px;
+      color: #00c3ff;
+    }
+
+    .contact-item a {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #00c3ff;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: background 0.3s;
+    }
+
+    .contact-item a:hover {
+      background: #0077b6;
+    }
+
+    
+
+/* مكان البرجر */
+#navbar {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  background: transparent; /* خلفية شفافة */
+  z-index: 1000;
+}
+
+/* أيقونة البرجر */
+.burger {
+  width: 35px;   /* أكبر شوية */
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.burger span {
+  display: block;
+  height: 4px;
+  background: #ffffff;
+  border-radius: 2px;
+  transition: 0.4s;
+}
+
+/* حالة التحول إلى × */
+.burger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(6px, 6px);
+}
+.burger.active span:nth-child(2) {
+  opacity: 0;
+}
+.burger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* القائمة */
+.menu {
+  display: none;
+  flex-direction: column;
+  background: rgba(46, 41, 41, 0.8);
+  position: absolute;
+  top: 50px;
+  left: 0;
+  padding: 15px 25px;
+  border-radius: 8px;
+  width: 90px;
+}
+
+.menu a {
+  font-size: 20px;
+  width: 95px;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  padding: 20px 0;
+  
+}
+
+.menu a:hover {
+ 
+ background: rgba(255, 255, 255, 0.3);
+ border-radius: 7px;
+}
+
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <h1>📱 تواصل معي</h1>
+    <div class="contacts">
+
+      <div class="contact-item">
+        <h2>واتساب</h2>
+        <a href="https://wa.me/201095958104" target="_blank">01095958104</a>
+      </div>
+
+      <div class="contact-item">
+        <h2>تيلجرام</h2>
+        <a href="https://t.me/01095958104" target="_blank">01095958104</a>
+      </div>
+
+      <div class="contact-item">
+        <h2>سناب شات</h2>
+        <a href="https://www.snapchat.com/add/kareemhashe6289?share_id=z-6192r4hoY&locale=ar-EG" target="_blank">
+          kareemhashe6289
+        </a>
+      </div>
+
+      <div class="contact-item">
+        <h2>انستجرام</h2>
+        <a href="https://www.instagram.com/kareem_elbakery?igsh=MTRnbWh3M2RrOW40bQ==" target="_blank">
+          kareem_elbakery
+        </a>
+      </div>
+
+      <div class="contact-item">
+        <h2>مسنجر</h2>
+        <a href="https://m.me/krym.albkry.114249" target="_blank">افتح المسنجر</a>
+      </div>
+
+      <div class="contact-item">
+        <h2>فيسبوك</h2>
+        <a href="https://www.facebook.com/share/16ehyUmTvm/" target="_blank">افتح الفيسبوك</a>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+  
+
+<div id="navbar">
+  <div class="burger" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <div class="menu" id="menu">
+    <a href="index.html">الرئيسية</a>
+    <a href="project.html">المشاريع</a>
+    <a href="about.html">عنا</a>
+    <a href="conect.html"> للتواصل </a>
+  </div>
+</div>
+
+<script src="hh.js"></script>
+</body>
+</html>

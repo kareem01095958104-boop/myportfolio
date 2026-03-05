@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>عن كريم</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Tahoma", sans-serif;
+      background: url("الخلفيه\ الداكنه.jpeg") no-repeat center center fixed; /* ضع الخلفية اللي تحبها */
+      background-size: cover;
+      color: #fff;
+    }
+
+    .overlay {
+      background: rgba(0,0,0,0.6);
+      min-height: 100vh;
+      padding: 40px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 40px;
+      color: #ffd700;
+    }
+
+    .about {
+      max-width: 815px;
+      border-radius: 10px;
+      margin: auto;
+      font-size: 18px;
+      line-height: 1.9;
+      text-align: center;
+      margin-bottom: 50px;
+       background: rgba(0,0,0,0.6);
+    }
+
+    .contact {
+      text-align: center;
+    }
+
+    .contact a {
+      display: inline-block;
+      padding: 14px 30px;
+      background: #28a745;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 20px;
+      transition: background 0.3s;
+    }
+
+    .contact a:hover {
+      background: #1e7e34;
+    }
+
+    
+
+/* مكان البرجر */
+#navbar {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  background: transparent; /* خلفية شفافة */
+  z-index: 1000;
+}
+
+/* أيقونة البرجر */
+.burger {
+  width: 35px;   /* أكبر شوية */
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.burger span {
+  display: block;
+  height: 4px;
+  background: #ffffff;
+  border-radius: 2px;
+  transition: 0.4s;
+}
+
+/* حالة التحول إلى × */
+.burger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(6px, 6px);
+}
+.burger.active span:nth-child(2) {
+  opacity: 0;
+}
+.burger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* القائمة */
+.menu {
+  display: none;
+  flex-direction: column;
+  background: rgba(46, 41, 41, 0.8);
+  position: absolute;
+  top: 50px;
+  left: 0;
+  padding: 15px 25px;
+  border-radius: 8px;
+  width: 90px;
+}
+
+.menu a {
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  padding: 20px 0;
+  font-size: 16px;
+}
+
+.menu a:hover {
+ 
+ background: rgba(255, 255, 255, 0.3);
+ border-radius: 7px;
+}
+
+
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <h1>👋 أهلاً بيكم، أنا كريم</h1>
+    <div class="about">
+          <br>
+      <p>
+        كريم هو مطوّر واجهات أمامية (Front-End Developer) شغوف ببناء تجارب مستخدم أنيقة وسهلة الاستخدام.  
+        يتميز بدقة عالية في التفاصيل، ويمتلك قدرة رائعة على تحويل الأفكار إلى تصميمات عملية وجذابة.  
+        كريم لا يكتفي بالحلول العادية، بل يبحث دائمًا عن الإبداع والتميز في كل مشروع يعمل عليه.
+      </p>
+      <p>
+        كريم شخص صبور، استراتيجي، ويحب التعلم المستمر.  
+        يوازن بين الجانب الفني والإبداعي، ويهتم بأن تكون أعماله واضحة، منظمة، ومريحة للمستخدم.  
+        يملك مهارة قوية في تنسيق الأكواد، تحسين الأداء، وضمان أن كل جزء من واجهة المستخدم يعمل بسلاسة تامة.
+      </p>
+      <p>
+        كريم ليس مجرد مطوّر، بل هو صانع تجارب، يضع بصمته في كل مشروع.  
+        يفتخر بقدرته على الجمع بين التقنية والفن، ويؤمن أن التصميم الجيد هو الذي يخدم الناس ويجعل حياتهم أسهل.  
+        إذا تعاملت معه، ستجد شخصًا ملتزمًا، متعاونًا، ويحب أن يرى النتيجة النهائية بأفضل صورة ممكنة.
+      </p>
+      <br>
+    </div>
+
+    <div class="contact">
+      <a href="https://wa.me/201095958104" target="_blank">📱 تواصل معي عبر واتساب</a>
+    </div>
+  </div>
+
+
+  
+
+<div id="navbar">
+  <div class="burger" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <div class="menu" id="menu">
+    <a href="index.html">الرئيسية</a>
+    <a href="project.html">المشاريع</a>
+    <a href="about.html">عنا</a>
+    <a href="conect.html"> للتواصل </a>
+  </div>
+</div>
+
+<script src="hh.js"></script>
+</body>
+</html>
